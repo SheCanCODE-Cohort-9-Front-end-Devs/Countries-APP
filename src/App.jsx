@@ -5,9 +5,16 @@ import Regions from './pages/Regions';
 import NotFound from './pages/NotFound';
 import HomeLayout from './layouts/HomeLayout';
 import OtherLayouts from './layouts/OtherLayouts';
+import NavBar from './components/NavBar';
+import Pagination from './components/Pagination';
+
 
 const App = () => {
   return (
+    <div>
+    <div>
+      <NavBar />
+      </div>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
@@ -30,7 +37,12 @@ const App = () => {
         />
       </Routes>
     </BrowserRouter>
-  )
+
+    <Pagination>
+      divicion
+    </Pagination>
+    </div>
+  );
 }
 
 export default App

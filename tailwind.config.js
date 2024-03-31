@@ -5,6 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens:{
+      'sm': '320px',
+      'md': '768px',
+    },
+
     extend: {
       backgroundImage: {
         'header-background': "url('./bg-img.jpg')",

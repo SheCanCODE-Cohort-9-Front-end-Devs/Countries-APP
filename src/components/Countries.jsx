@@ -1,14 +1,11 @@
 import React from 'react'
+import { json } from 'react-router-dom'
 
 const Countries = () => {
   return (
-    <div className='m-10'>
-      <div className='flex justify-between'>
-        <p>View Countries</p>
-        <p>Select continent </p>
-      </div>
-      <img src="https://flagcdn.com/cy.svg" alt="" class="mb-4"></img>
-
+    <div className='m-10 flex justify-between'>
+      <p className=' text-xl'>View Countries</p>
+      <p>Select continent </p>
       </div>
   )
 }

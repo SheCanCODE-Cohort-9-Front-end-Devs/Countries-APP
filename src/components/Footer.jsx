@@ -2,7 +2,12 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <img src='https://media.istockphoto.com/id/183819034/photo/two-dices.jpg?s=612x612&w=0&k=20&c=sawA-Q6tAlmzm37EiFViPCr9AT3f-PnwCM8qXrQzR2w='></img>
+    <div className=' bg-slate-100 flex items-center justify-around h-20 '>
+      <img className='w-40' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLBBku8PBaMUd1PyD3C155FbzyeBPwEUjM8UanwsNNhnckAScO'></img>
+      <p className=' text-black' >
+        Copyright @ 2024. All rights reserved.
+      </p>
+    </div>
   )
 }
 

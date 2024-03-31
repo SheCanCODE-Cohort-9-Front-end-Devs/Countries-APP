@@ -2,11 +2,11 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <nav className = "bg-black text-white py-3 flex gap-10 " >
-      <a href='https://tailwindcss.com/docs/guides/vite' > Tailwinf CSS with Vite</a>
-      <a href='https://countriesapi-eric.netlify.app/?page=1' > Download new version</a>
-      <a href='https://www.youtube.com/watch?v=2-crBg6wpp0&ab_channel=freeCodeCamp.org' > Github</a>
-      <a href='https://github.com/sylvie013' > Oragnisation</a>
+    <nav className = "text-white pt-9 px-20 flex justify-between " >
+      <a href='#'> 
+        <img className=' w-40 ' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLBBku8PBaMUd1PyD3C155FbzyeBPwEUjM8UanwsNNhnckAScO'></img>
+      </a>
+      <a href='#' className=' hover:text-blue-500 ' > Countries</a>
     </nav>
   );
 }

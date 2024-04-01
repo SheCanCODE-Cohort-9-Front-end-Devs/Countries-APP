@@ -19,13 +19,11 @@ const Pagination = () => {
 
   return (
     <div className=' text-black flex gap-2 items-center'>
-      {/* <button>&LeftAngleBracket;&LeftAngleBracket;</button> */}
       <button className='border border-r-4'>1</button>
       <button className='border border-r-4'>2</button>
       <button className='border border-r-4'>3</button>
       <button className='border border-r-4'>4</button>
       <button className='border border-r-4'>5</button>
-      {/* <button>&RightAngleBracket;&RightAngleBracket;</button> */}
     </div>
   )
 }

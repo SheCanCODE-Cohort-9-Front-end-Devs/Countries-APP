@@ -12,7 +12,7 @@ export default {
 
     extend: {
       backgroundImage: {
-        'header-background': "url('./bg-img.jpg')",
+        'header-background': "url('./header-bg.webp')",
         'footer-texture': "url('/img/footer-texture.png')",
        }
     },

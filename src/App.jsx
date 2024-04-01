@@ -6,14 +6,17 @@ import NotFound from './pages/NotFound';
 import HomeLayout from './layouts/HomeLayout';
 import OtherLayouts from './layouts/OtherLayouts';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import Pagination from './components/Pagination';
+// import Pagination from './components/Pagination';
+// import Footer from './components/Footer';
 
 
 const App = () => {
   return (
     <div>
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       </div>
     <BrowserRouter>
       <Routes>
@@ -35,13 +38,18 @@ const App = () => {
           </OtherLayouts>
         }
         />
+        <Route path="*" element={
+          <Pagination />
+
+        }
+        />
+         <Route path="*" element={
+          <Footer />
+        }
+        />
       </Routes>
     </BrowserRouter>
-
-    <Pagination>
-      divicion
-    </Pagination>
-    </div>
+  </div>
   );
 }
 

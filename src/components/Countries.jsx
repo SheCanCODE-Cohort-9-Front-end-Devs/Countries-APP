@@ -22,9 +22,11 @@ function Countries() {
  
   
   return (
-    <div className="">
+      <div>
+      <div>
       <div className=" flex justify-between ">
     <h1 className="text-2xl px-10 py-5">View Countries</h1>
+    
     <input type="text" name="search" placeholder="Search continent" className="color-black  mt-5 mr-10" list="options"/>
     <datalist id="options">
             <option value="Africa"></option>
@@ -36,7 +38,8 @@ function Countries() {
             <option value="Oceania"></option>
           </datalist>
     </div>
-    <p className="text-xl p-10 mb-5">Pages</p>
+   <p className="px-10 py-5 mb-10 text-xl ">Pages</p>
+      
     <div className="container items-center justify-center place-items-center md:ml-0 lg:ml-20">
       <div className="">
         <ul className="flex flex-wrap gap-5 justify-center h-[120px] mx-auto pl-10 place-items-center"> 
@@ -52,22 +55,26 @@ function Countries() {
           ))}
         </ul>
       </div>
-      <div className="">
-      {/* Pagination */}
-      {countryData.length > 0 && (
-        <ul className="flex justify-center mt-5">
-          {Array.from({ length: Math.ceil(countryData.length / countriesPerPage) }, (_, index) => (
-            <li key={index + 1} className="mx-2 cursor-pointer" onClick={() => paginate(index + 1)}>
-              {index + 1}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
     </div>
   </div>
-  
-);
-          }
+       {/* Pagination */}
+       {countryData.length > 0 && (
+        <div className="flex justify-center my-5">
+          <ul className="flex">
+            <li className="mx-2 cursor-pointer" onClick={() =>paginate(currentPage - 1)} disabled={currentPage=== 1}>&lt;</li>
+            {Array.from({ length: Math.ceil(countryData.length / countriesPerPage) }, (_, index) => (
+              <li key={index + 1} className="mx-2 cursor-pointer" onClick={() => paginate(index + 1)}>
+                {index + 1}
+                
+              </li>
+            ))}
+             <li className="mx-2 cursor-pointer" onClick={() =>paginate(currentPage - 1)} disabled={currentPage=== 1}>&gt;</li>
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+      
 
-export default Countries
+export default Countries;

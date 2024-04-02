@@ -1,8 +1,8 @@
 import React from 'react';
 import { CountriesSection } from '../styled-components/GeneralComponents'
 
-const Countries = () => {
-  return (
+ const Countries = () => {
+   return (
     <CountriesSection>
       {/* Top part  */}
       <div id='top-section'>
@@ -28,8 +28,8 @@ const Countries = () => {
         <button type="button">4</button>
         <button type="button">5</button>
       </div>
-    </CountriesSection>
+      </CountriesSection>
   )
 }
 
-export default Countries
+export default Countries 

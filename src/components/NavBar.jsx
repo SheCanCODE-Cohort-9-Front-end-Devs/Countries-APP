@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { IoMenu } from "react-icons/io5";
 
 const NavBar = () => {
   return (
@@ -7,6 +8,7 @@ const NavBar = () => {
         <img className=' w-40 ' src='navbar.png'></img>
       </a>
       <a href='#' className=' hover:text-blue-500' > Countries </a>
+      <IoMenu />
     </nav>
   );
 }

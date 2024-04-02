@@ -1,5 +1,5 @@
 import React from 'react'
-import { json } from 'react-router-dom'
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Countries = () => {
   return (
@@ -8,7 +8,7 @@ const Countries = () => {
       <p className=' text-2xl'>View Countries</p>
       <p>page 1 of 5</p>
       </div>
-      <p>Select continent </p>
+      <p className='flex justify-center gap-2 items-center'>Select continent <IoMdArrowDropdown /> </p>
       </div>
   )
 }

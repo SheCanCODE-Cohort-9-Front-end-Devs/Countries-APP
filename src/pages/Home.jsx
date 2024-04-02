@@ -1,12 +1,13 @@
-import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Countries from '../components/Countries'
+import React from 'react';
+import Countries from '../components/Countries';
+import { SectionHolder } from '../styled-components/GeneralComponents';
 
 const Home = () => {
   return (
-    <div>
-      <Countries />
+    <div className='flex flex-col items-center'>
+      <SectionHolder>
+        <Countries />
+      </SectionHolder>
     </div>
   )
 }

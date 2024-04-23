@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 import MobileLogo from './icons/MobileLogo'
 import { CiMenuFries } from "react-icons/ci";
 
+
 const NavBar = () => {
   return (
     <div className='flex w-full justify-between py-10 '>
